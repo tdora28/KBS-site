@@ -1,0 +1,18 @@
+// Base Styles
+
+// Makes sure that everything is reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  border: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: $ff-base;
+  font-size: $fs-base;
+  background-color: $white-smoke;
+}

@@ -1,0 +1,43 @@
+// Decorative Page Title
+/* How it works in HTML
+<div class="p-title">
+  <div class="p-title__line1"></div>
+  <h1 class="p-title__name">The name of the page</h1>
+  <h2 class="p-title__description">A description of the page - optional</h2>
+  <div class="p-title__line2"></div>
+</div>
+*/
+.p-title {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+
+  &__name {
+    margin: 0;
+    padding: 0 4rem;
+    font-family: $ff-display;
+    font-size: $fs-xl;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 0 4rem;
+    font-family: $ff-display;
+    font-size: $fs-md;
+  }
+
+  %line {
+    width: 35%;
+    height: 3px;
+    background-color: $resolution-blue;
+  }
+  &__line1 {
+    @extend %line;
+    margin-bottom: 1.5rem;
+  }
+  &__line2 {
+    @extend %line;
+    align-self: flex-end;
+    margin-top: 1.5rem;
+  }
+}
