@@ -1,4 +1,4 @@
-// Variables
+// VARIABLES
 
 // Fonts
 $ff-base    : 'Montserrat', 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
@@ -11,7 +11,19 @@ $fs-base : 16px;
 $fs-sm   : 12px;
 
 // Colors
-$resolution-blue : #2E3A7B; // blue
-$white-smoke     : #f5f5f5; // white
+$resolution-blue   : #2e3a7b; // blue
+$tangaroa          : #203141; // blue
+$white             : #ffffff; // white
+$white-smoke       : #f5f5f5; // white
+$white-smoke-light : #f1f1f1; // white
 
 $mist: rgba(255,255,255,.6);
+$smoke : rgba(0,0,0,.25);
+
+
+// MIXINS
+
+// Animations
+@mixin ease-out {
+  transition: all .5s ease-out;
+}

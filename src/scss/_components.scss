@@ -41,3 +41,100 @@
     margin-top: 1.5rem;
   }
 }
+
+// Section Title
+// Great for emphasizing headings
+/* How it works in HTML
+<h3 class="s-title">Section Title</h3>
+*/
+.s-title {
+  font-family: $ff-display;
+  font-size: $fs-lg;
+  color: $resolution-blue;
+}
+
+// Link
+a {
+  color: $resolution-blue;
+  border-bottom: 1px solid $resolution-blue;
+}
+
+// Navigation Menu
+/* How it works in HTML
+<ul class="menu">
+  <li><a class="menu__link current" href="index.html">Home</a></li>
+  <li><a class="menu__link" href="talks.html">Talks</a></li>
+  <li><a class="menu__link" href="papers.html">Papers</a></li>
+</ul>
+*/
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: fit-content;
+
+  &__link {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0.6rem 1.5rem;
+    font-family: $ff-display;
+    text-align: center;
+    text-transform: uppercase;
+    color: $tangaroa;
+    border: 1px solid $tangaroa;
+    border-radius: 2px;
+    @include ease-out;
+
+    &:hover {
+      color: $white-smoke;
+      background-color: $tangaroa;
+    }
+  }
+}
+.current {
+  color: $white-smoke;
+  background-color: $tangaroa;
+}
+
+// Framed Image
+// Adds a photograph-like frame to images
+/* How it works in HTML
+<div class="profile-frame">
+  <img src="img/profile.jpg" alt="Image of Sándor Kisfaludi-Bak">
+</div>
+*/
+.profile-frame {
+  padding: 10px;
+  max-width: 465px;
+  background-color: $white;
+  border: 1px solid $white-smoke-light;
+  box-shadow: 2px 2px 4px $smoke;
+}
+
+// Textbox
+/* How it works in HTML
+<div class="textbox">
+  <p>As many paragraphs as you like</p>
+</div>
+*/
+.textbox {
+  width: fit-content;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1.5px solid $tangaroa;
+  border-radius: 2px;
+}
+
+// Footer Style
+/* How it works in HTML
+<footer class="footer">
+  <small>Copyright &copy; S. Kisfaludi-Bak</small>
+</footer>
+*/
+.footer {
+  margin-top: 4rem;
+  padding: .8rem;
+  text-align: center;
+  color: $white-smoke;
+  background-color: $tangaroa;
+}

@@ -1,9 +1,48 @@
 // Header Styles
 
-// Homepage header
+// Homepage Header
 // More decorative header for the homepage
 .header--home {
   padding: 4rem 0 4rem 10%;
   background: url('../img/background.jpg') center/cover no-repeat;
   box-shadow: inset 0 0 0 1000px $mist;
+}
+
+// Navigation Container
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4rem 10%;
+}
+
+// Homepage Main Section
+.main--home {
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-areas:
+    "welcome img"
+    "text img"
+    "contact contact"
+  ;
+  width: fit-content;
+  margin: auto;
+
+  .g-welcome {
+    grid-area: welcome;
+  }
+  .g-img {
+    grid-area: img;
+  }
+  .g-text {
+    grid-area: text;
+    max-width: 280px;
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+  .g-contact {
+    grid-area: contact;
+    justify-self: center;
+  }
+
 }
