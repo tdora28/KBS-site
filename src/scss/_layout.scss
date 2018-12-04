@@ -8,8 +8,8 @@
   box-shadow: inset 0 0 0 1000px $mist;
 }
 
-// Navigation Container
-.nav {
+// Homepage Navigation
+.nav--home {
   display: flex;
   justify-content: flex-end;
   padding: 4rem 10%;
@@ -18,16 +18,16 @@
 // Homepage Main Section
 .main--home {
   display: grid;
-  grid-gap: 5rem;
+  grid-gap: 3rem;
   grid-template-areas:
     "welcome img"
     "text img"
-    "contact contact"
-  ;
+    "contact contact";
   width: fit-content;
   margin: auto;
-  padding-bottom: 4rem;
+  padding: 0 2rem 4rem;
 
+  // Grid areas
   .g-welcome {
     grid-area: welcome;
   }
@@ -53,4 +53,11 @@
 // Footer height is 43px
 .content {
   min-height: calc(100vh - 43px);
+}
+
+// Header for Other Pages
+.header--page {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10%;
 }
