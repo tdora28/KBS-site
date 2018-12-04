@@ -26,6 +26,7 @@
   ;
   width: fit-content;
   margin: auto;
+  padding-bottom: 4rem;
 
   .g-welcome {
     grid-area: welcome;
@@ -45,4 +46,11 @@
     justify-self: center;
   }
 
+}
+
+// Sticky Footer on Homepage
+// Find footer settings in _components.scss
+// Footer height is 43px
+.content {
+  min-height: calc(100vh - 43px);
 }

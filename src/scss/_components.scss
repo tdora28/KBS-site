@@ -132,9 +132,11 @@ a {
 </footer>
 */
 .footer {
-  margin-top: 4rem;
-  padding: .8rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+  font-size: $fs-sm;
   color: $white-smoke;
   background-color: $tangaroa;
 }
