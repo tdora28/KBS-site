@@ -125,6 +125,74 @@ a {
   border-radius: 2px;
 }
 
+// Cards for Talks
+/* How it works in HTML
+**********
+One card:
+<a class="card" href="URL HERE" target="_blank">
+  <img class="card__img" src="img/figures/figure1.png">
+  <div class="card__description">
+    <h4 class="card__title">TITLE HERE</h4>
+    <div class="card__info">
+      <p class="card__evt">EVENT HERE</p>
+      <p>DATE HERE</p>
+      <p>PLACE HERE</p>
+    </div>
+  </div>
+</a>
+**********
+You need a wrapper to your cards to display them with grid (great for responsiveness):
+<div class="cards">
+  [first card]
+  [second card]
+  ...
+</div>
+*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  padding-bottom: 4rem;
+}
+.card {
+  display: block;
+  width: 300px;
+  height: 380px;
+  background-color: $white;
+  border: 1px solid $tangaroa;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px $smoke;
+
+  &__img {
+    width: auto;
+    height: 50%;
+    margin: auto;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    padding: 1rem;
+    border-top: 1px dashed $resolution-blue;
+  }
+  &__title {
+    font-weight: bolder;
+  }
+  &__info {
+    text-align: right;
+    font-size: $fs-sm;
+  }
+  &__evt {
+    font-family: $ff-display;
+    font-size: $fs-base;
+    font-weight: bolder;
+  }
+}
+
+
 // Footer Style
 /* How it works in HTML
 <footer class="footer">
