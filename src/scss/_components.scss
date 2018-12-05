@@ -59,6 +59,22 @@ a {
   border-bottom: 1px solid $resolution-blue;
 }
 
+// Italicized Text
+/* How it works in HTML
+<p class="italic">Text goes here</p>
+*/
+.italic {
+  font-style: italic;
+}
+
+// Bold Text
+/* How it works in HTML
+<p class="bold">Text goes here</p>
+*/
+.bold {
+  font-weight: bold;;
+}
+
 // Navigation Menu
 /* How it works in HTML
 <ul class="menu">
@@ -192,6 +208,38 @@ You need a wrapper to your cards to display them with grid (great for responsive
   }
 }
 
+// Striped Sections for Papers
+/* How it works in HTML
+<section class="paper-type">
+  <h4 class="s-title">Journals</h4>
+
+  <div class="paper-entry">
+    <p>Author1 &#9679; Author2:</p>
+    <p class="paper-entry__title"><a href="link goes here" target="_blank">Title goes here</a> (2018)</p>
+    <p>reference goes here</p>
+  </div>
+
+</section>
+*/
+.paper-type {
+  margin: 0 1rem 2rem;
+  background-color: $white;
+  border-radius: 2px;
+  box-shadow: 2px 2px 4px $smoke;
+
+  &>* {
+    padding: 1rem 2rem;
+  }
+
+  .paper-entry:nth-child(even) {
+    background-color: $gainsboro;
+  }
+
+  .paper-entry__title {
+    font-family: $ff-display;
+    font-size: $fs-rd;
+  }
+}
 
 // Footer Style
 /* How it works in HTML
