@@ -1,7 +1,7 @@
 // Header Styles
 
 // Homepage Header
-// More decorative header for the homepage
+// More decorative header for the Homepage
 .header--home {
   padding: 4rem 0 4rem 10%;
   background: url('../img/background.jpg') center/cover no-repeat;
@@ -27,7 +27,7 @@
   margin: auto;
   padding: 0 2rem 4rem;
 
-  // Grid areas
+  // Grid areas for Homepage content
   .g-welcome {
     grid-area: welcome;
   }
@@ -49,7 +49,7 @@
 }
 
 // Sticky Footer on Homepage
-// Find footer settings in _components.scss
+// Find footer settings in _05-components.scss
 // Footer height is 43px
 .content {
   min-height: calc(100vh - 43px);
@@ -63,7 +63,7 @@
 }
 
 // Papers Page Main Section
-.papers {
+.main--papers {
   width: 90vw;
   margin: auto;
 }

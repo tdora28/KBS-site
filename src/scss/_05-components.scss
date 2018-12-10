@@ -1,13 +1,13 @@
 // Decorative Page Title
 /* How it works in HTML
-<div class="p-title">
-  <div class="p-title__line1"></div>
-  <h1 class="p-title__name">The name of the page</h1>
-  <h2 class="p-title__description">A description of the page - optional</h2>
-  <div class="p-title__line2"></div>
+<div class="deco-title">
+  <div class="deco-title__line1"></div>
+  <h1 class="deco-title__name">The name of the page</h1>
+  <h2 class="deco-title__description">A description of the page - optional</h2>
+  <div class="deco-title__line2"></div>
 </div>
 */
-.p-title {
+.deco-title {
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -107,6 +107,7 @@ a {
     }
   }
 }
+// Use the 'current' class on the current page
 .current {
   color: $white-smoke;
   background-color: $tangaroa;
@@ -115,11 +116,11 @@ a {
 // Framed Image
 // Adds a photograph-like frame to images
 /* How it works in HTML
-<div class="profile-frame">
+<div class="frame">
   <img src="img/profile.jpg" alt="Image of Sándor Kisfaludi-Bak">
 </div>
 */
-.profile-frame {
+.frame {
   padding: 10px;
   max-width: 465px;
   background-color: $white;
@@ -128,6 +129,7 @@ a {
 }
 
 // Textbox
+// Creates a minimalist border around the text
 /* How it works in HTML
 <div class="textbox">
   <p>As many paragraphs as you like</p>
