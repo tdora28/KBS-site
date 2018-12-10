@@ -208,6 +208,11 @@ You need a wrapper to your cards to display them with grid (great for responsive
     font-size: $fs-base;
     font-weight: bolder;
   }
+
+  &:hover {
+    border-width: 1.5px;
+    box-shadow: 2px 2px 10px $resolution-blue;
+  }
 }
 
 // Striped Sections for Papers
