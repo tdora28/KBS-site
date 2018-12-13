@@ -77,45 +77,18 @@ a {
 
 // Navigation Menu
 /* How it works in HTML
-<ul class="menu">
-  <li><a class="menu__link current" href="index.html">Home</a></li>
-  <li><a class="menu__link" href="talks.html">Talks</a></li>
-  <li><a class="menu__link" href="papers.html">Papers</a></li>
-</ul>
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link current" href="index.html">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="talks.html">Talks</a></li>
+    <li class="menu__item"><a class="menu__link" href="papers.html">Papers</a></li>
+  </ul>
+  <div class="menu-btn" id="js-menuBtn">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
 */
-/*
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  width: fit-content;
-
-  &__link {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 0.6rem 1.5rem;
-    font-family: $ff-display;
-    text-align: center;
-    text-transform: uppercase;
-    color: $tangaroa;
-    border: 1px solid $tangaroa;
-    border-radius: 2px;
-    @include ease-out;
-
-    &:hover {
-      color: $white-smoke;
-      background-color: $tangaroa;
-    }
-  }
-}
-
-// Use the 'current' class on the current page
-.current {
-  color: $white-smoke;
-  background-color: $tangaroa;
-}
-*/
-
+// Menu button on small screen sizes
 .menu-btn {
   position: fixed;
   top: 20px;
@@ -129,9 +102,10 @@ a {
   &:hover {
     transform: rotate(180deg);
   }
-  @media (min-width: 786px) {
+  @include rd(786) {
     display: none;
   }
+
 
   .line {
     width: 20px;
@@ -156,16 +130,7 @@ a {
     }
   }
 }
-
-@keyframes slide-in {
-  0% {
-    transform: translateX(1000px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
+// Responsive menu
 .menu {
   display: none;
   &.show {
@@ -181,7 +146,7 @@ a {
     padding-top: 20vh;
     background-color: $tangaroa;
   }
-  @media (min-width: 786px) {
+  @include rd(786) {
     display: flex;
     justify-content: flex-end;
     width: fit-content;
@@ -209,7 +174,7 @@ a {
         text-shadow: 0 0 4px $white;
       }
     }
-    @media (min-width: 786px) {
+    @include rd(786) {
       display: inline-block;
       margin-right: 10px;
       margin-left: 10px;

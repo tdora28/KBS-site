@@ -22,8 +22,50 @@ $white-smoke-light : #f1f1f1; // white
 $mist: rgba(255,255,255,.6);
 $smoke : rgba(0,0,0,.25);
 
+// Media queries (min-width)
+// Small tablets and large smartphones (landscape view)
+$mq-sm: 576px;
+// Small tablets (portrait view)
+$mq-md: 768px;
+// Tablets and small desktops
+$mq-lg: 992px;
+// Large tablets and desktops
+$mq-xl: 1200px;
+
 
 // MIXINS
+
+// Media queries
+// Small devices
+@mixin sm {
+  @media (min-width: #{$mq-sm}) {
+      @content;
+  }
+}
+// Medium devices
+@mixin md {
+  @media (min-width: #{$mq-md}) {
+      @content;
+  }
+}
+// Large devices
+@mixin lg {
+  @media (min-width: #{$mq-lg}) {
+      @content;
+  }
+}
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$mq-xl}) {
+      @content;
+  }
+}
+// Custom devices
+@mixin rd($screen) {
+  @media (min-width: $screen+'px') {
+      @content;
+  }
+}
 
 // Transitions
 @mixin ease-out {
