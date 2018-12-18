@@ -1,10 +1,14 @@
+// RESPONSIVE NAVIGATION
+
 const menuBtn = document.getElementById('js-menuBtn');
 const menu = document.querySelector('.menu');
 const menuItems = document.querySelectorAll('.menu__item');
 const menuLinks = document.querySelectorAll('.menu__link');
 let showMenu = false;
-const mdScreen = window.matchMedia("(min-width: 786px)")
+const mdScreen = window.matchMedia("(min-width: 786px)");
 
+// Toggle Menu
+// Toggles menu on smaller screens. Activated by clicking the menu icon.
 function toggleMenu() {
   if (!showMenu) {
     console.log('Open!');
@@ -31,6 +35,9 @@ function toggleMenu() {
   }
 }
 
+// Clear Media Query
+// Clears out some remaining classes from the responsive navigation, and sets showMenu to false on bigger screen sizes.
+// Parameter: screen size to listen to: window.matchMedia("(min-width: 786px)")
 function clearMQ(x) {
   if (x.matches) { // If media query matches
     menuBtn.classList.remove('close');
@@ -49,3 +56,8 @@ menuBtn.addEventListener('click', toggleMenu);
 clearMQ(mdScreen); // Call listener function at run time
 mdScreen.addListener(clearMQ); // Attach listener function on state changes
 
+
+// CURRENT YEAR IN FOOTER
+const year = document.getElementById('js-year');
+
+year.innerHTML = (new Date()).getFullYear();
