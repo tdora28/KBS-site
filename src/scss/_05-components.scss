@@ -14,16 +14,30 @@
 
   &__name {
     margin: 0;
-    padding: 0 4rem;
+    padding: 0 2rem;
     font-family: $ff-display;
-    font-size: $fs-xl;
+    font-size: $fs-md;
+    @include sm {
+      font-size: $fs-lg;
+    }
+    @include md {
+      padding: 0 4rem;
+      font-size: $fs-xl;
+    }
   }
 
   &__description {
     margin: 0;
-    padding: 0 4rem;
+    padding: 0 2rem;
     font-family: $ff-display;
-    font-size: $fs-md;
+    font-size: $fs-base;
+    @include sm {
+      font-size: $fs-rd;
+    }
+    @include md {
+      padding: 0 4rem;
+      font-size: $fs-md;
+    }
   }
 
   %line {
@@ -49,8 +63,11 @@
 */
 .s-title {
   font-family: $ff-display;
-  font-size: $fs-lg;
+  font-size: $fs-md;
   color: $resolution-blue;
+  @include md {
+    font-size: $fs-lg;
+  }
 }
 
 // Link

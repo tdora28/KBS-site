@@ -12,17 +12,28 @@
 .nav--home {
   display: flex;
   justify-content: flex-end;
-  padding: 4rem 10%;
+  padding: 2rem 0;
+  @include rd(786) {
+    padding: 4rem 10%;
+  }
 }
 
 // Homepage Main Section
 .main--home {
   display: grid;
-  grid-gap: 3rem;
+  grid-gap: 1.5rem;
   grid-template-areas:
-    "welcome img"
-    "text img"
-    "contact contact";
+    "welcome"
+    "img"
+    "text"
+    "contact";
+  @include md {
+    grid-gap: 3rem;
+    grid-template-areas:
+      "welcome img"
+      "text img"
+      "contact contact";
+  }
   width: fit-content;
   margin: auto;
   padding: 0 2rem 4rem;
@@ -30,12 +41,22 @@
   // Grid areas for Homepage content
   .g-welcome {
     grid-area: welcome;
+    text-align: center;
+    @include md {
+      text-align: left;
+    }
   }
   .g-img {
     grid-area: img;
+    height: fit-content;
+    max-width: 400px;
+    @include md {
+      max-width: 500px;
+    }
   }
   .g-text {
     grid-area: text;
+    justify-self: center;
     max-width: 280px;
     p {
       margin-bottom: 1rem;
