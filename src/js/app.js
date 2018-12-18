@@ -61,3 +61,11 @@ mdScreen.addListener(clearMQ); // Attach listener function on state changes
 const year = document.getElementById('js-year');
 
 year.innerHTML = (new Date()).getFullYear();
+
+
+//  DISPLAY EMAIL ADDRESS
+const email = document.getElementById('js-email');
+const emailFirst = "s.kisfaludi.bak";
+const emailSecond = "tue.nl";
+
+email.innerHTML = `${emailFirst}&#64;${emailSecond}`;
