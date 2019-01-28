@@ -284,6 +284,7 @@ You need a wrapper to your cards to display them with grid (great for responsive
   border: 1px solid $tangaroa;
   border-radius: 2px;
   box-shadow: 2px 2px 4px $smoke;
+  transition: box-shadow .25s ease-out;
 
   &__img {
     width: auto;
@@ -313,8 +314,7 @@ You need a wrapper to your cards to display them with grid (great for responsive
   }
 
   &:hover {
-    border-width: 1.5px;
-    box-shadow: 2px 2px 10px $resolution-blue;
+    box-shadow: 2px 2px 10px $tangaroa;
   }
 }
 
