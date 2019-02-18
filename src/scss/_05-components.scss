@@ -40,6 +40,10 @@
     }
   }
 
+  &__paragraph {
+    padding: 0 2rem;
+  }
+
   %line {
     width: 35%;
     height: 3px;
@@ -229,21 +233,6 @@ a {
   background-color: $white;
   border: 1px solid $white-smoke-light;
   box-shadow: 2px 2px 4px $smoke;
-}
-
-// Textbox
-// Creates a minimalist border around the text
-/* How it works in HTML
-<div class="textbox">
-  <p>As many paragraphs as you like</p>
-</div>
-*/
-.textbox {
-  width: fit-content;
-  padding: 1.5rem;
-  text-align: center;
-  border: 1.5px solid $tangaroa;
-  border-radius: 2px;
 }
 
 // Cards for Talks
