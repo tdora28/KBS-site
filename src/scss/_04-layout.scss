@@ -35,6 +35,7 @@
       "contact contact";
   }
   width: fit-content;
+  max-width: 1000px;
   margin: auto;
   padding: 0 2rem 4rem;
 
@@ -48,6 +49,7 @@
   }
   .g-img {
     grid-area: img;
+    justify-self: center;
     height: fit-content;
     max-width: 400px;
     @include md {
