@@ -65,7 +65,7 @@ year.innerHTML = (new Date()).getFullYear();
 
 //  DISPLAY EMAIL ADDRESS
 const email = document.getElementById('js-email');
-const emailFirst = "s.kisfaludi.bak";
-const emailSecond = "tue.nl";
+const emailFirst = "sandor.kisfaludi-bak";
+const emailSecond = "mpi-inf.mpg.de";
 
 email.innerHTML = `${emailFirst}&#64;${emailSecond}`;
