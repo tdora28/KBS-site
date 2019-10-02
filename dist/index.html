@@ -1,75 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Basic Page Needs -->
-  <meta charset="UTF-8">
-  <title>S. Kisfaludi-Bak</title>
-  <meta name="description" content="Academic webpage of Sándor Kisfaludi-Bak">
-  <meta name="author" content="Sándor Kisfaludi-Bak">
-  <!-- Browser Specific Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Font -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-</head>
-<body>
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="UTF-8" />
+    <title>S. Kisfaludi-Bak</title>
+    <meta
+      name="description"
+      content="Academic webpage of Sándor Kisfaludi-Bak"
+    />
+    <meta name="author" content="Sándor Kisfaludi-Bak" />
+    <!-- Browser Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crimson+Text|Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="content">
+      <!-- Header -->
+      <header class="header--home">
+        <div class="deco-title">
+          <div class="deco-title__line1"></div>
+          <h1 class="deco-title__name">Sándor Kisfaludi&#8209;Bak</h1>
+          <h2 class="deco-title__description">PostDoc</h2>
+          <div class="deco-title__line2"></div>
+        </div>
+      </header>
 
-  <div class="content">
+      <!-- Navigation -->
+      <nav class="nav--home">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link current" href="index.html">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="talks.html">Talks</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="papers.html">Papers</a>
+          </li>
+        </ul>
+        <div class="menu-btn" id="js-menuBtn">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
 
-    <!-- Header -->
-    <header class="header--home">
-      <div class="deco-title">
-        <div class="deco-title__line1"></div>
-        <h1 class="deco-title__name">Sándor Kisfaludi&#8209;Bak</h1>
-        <h2 class="deco-title__description">PostDoc</h2>
-        <div class="deco-title__line2"></div>
-      </div>
-    </header>
+      <!-- Main Section -->
+      <main class="main--home">
+        <h3 class="g-welcome s-title">Welcome!</h3>
+        <div class="g-img frame">
+          <img src="img/profile.jpg" alt="Image of Sándor Kisfaludi-Bak" />
+        </div>
+        <div class="g-text">
+          <p>
+            I am a PostDoc at the
+            <a
+              href="https://www.mpi-inf.mpg.de/departments/algorithms-complexity/"
+              target="_blank"
+              >Algorithms and Complexity Group</a
+            >
+            of the
+            <a href="https://www.mpi-inf.mpg.de/home/" target="_blank"
+              >Max Planck Institute for Informatics</a
+            >, in Saarbrücken, Germany.
+          </p>
+          <p>
+            My main interests are algorithms, computational and combinatorial
+            geometry, and parameterized complexity.
+          </p>
+        </div>
+        <div class="g-contact deco-title">
+          <div class="deco-title__line1"></div>
+          <p class="deco-title__paragraph">Office: E1 4 311B</p>
+          <p class="deco-title__paragraph">
+            Email: <span id="js-email"></span>
+          </p>
+          <div class="deco-title__line2"></div>
+        </div>
+      </main>
+    </div>
 
-    <!-- Navigation -->
-    <nav class="nav--home">
-      <ul class="menu">
-        <li class="menu__item"><a class="menu__link current" href="index.html">Home</a></li>
-        <li class="menu__item"><a class="menu__link" href="talks.html">Talks</a></li>
-        <li class="menu__item"><a class="menu__link" href="papers.html">Papers</a></li>
-      </ul>
-      <div class="menu-btn" id="js-menuBtn">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
+    <!-- Footer -->
+    <footer class="footer">
+      <small
+        >Copyright &copy; <span id="js-year"></span> S. Kisfaludi-Bak</small
+      >
+    </footer>
 
-    <!-- Main Section -->
-    <main class="main--home">
-      <h3 class="g-welcome s-title">Welcome!</h3>
-      <div class="g-img frame">
-        <img src="img/profile.jpg" alt="Image of Sándor Kisfaludi-Bak">
-      </div>
-      <div class="g-text">
-        <p>I am a PostDoc at the <a href="https://www.mpi-inf.mpg.de/departments/algorithms-complexity/" target="_blank">Algorithms and Complexity Group</a> of the <a href="https://www.mpi-inf.mpg.de/home/" target="_blank">Max Planck Institute for Informatics</a>, in Saarbrücken, Germany.
-        <p>My main interests are algorithms, computational and combinatorial geometry, and parameterized complexity.</p>
-      </div>
-      <div class="g-contact deco-title">
-        <div class="deco-title__line1"></div>
-        <p class="deco-title__paragraph">Office: E1 4 311B</p>
-        <p class="deco-title__paragraph">Email: <span id="js-email"></span></p>
-        <div class="deco-title__line2"></div>
-      </div>
-    </main>
-
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <small>Copyright &copy; <span id="js-year"></span> S. Kisfaludi-Bak</small>
-  </footer>
-
-  <script src="js/app.js"></script>
-</body>
+    <script src="js/app.js"></script>
+  </body>
 </html>

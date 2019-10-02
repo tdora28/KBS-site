@@ -4,7 +4,7 @@
 // More decorative header for the Homepage
 .header--home {
   padding: 4rem 0 4rem 10%;
-  background: url('../img/background.jpg') center/cover no-repeat;
+  background: url("../img/background.jpg") center/cover no-repeat;
   box-shadow: inset 0 0 0 1000px $mist;
 }
 
@@ -68,7 +68,6 @@
     grid-area: contact;
     justify-self: center;
   }
-
 }
 
 // Sticky Footer on Homepage
@@ -88,5 +87,6 @@
 // Papers Page Main Section
 .main--papers {
   width: 90vw;
+  max-width: 800px;
   margin: auto;
 }
